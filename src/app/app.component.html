@@ -1,0 +1,124 @@
+<nav></nav>
+<header>
+  <div class="headerWrapper">
+    <div class="grid-container-element">
+      <div class="grid-child-element purple">
+        <div style="flex-direction: column;" *ngIf="isMobileLayout" class="grid-child-element green">
+          <img
+            src="../assets/testAssets/assets/images/lc-hero-mobile.png"
+          />
+        </div>
+        <h2>The place to work<br />with your lawyer</h2>
+        <p>
+          Your lawyer uses LawConnect to share information with you <br />
+          about your legal case in a privite, convenient and secure way.
+        </p>
+        <br/>
+        <button class="createAccountBtn">Create Free Account</button>
+      </div>
+      <div *ngIf="!isMobileLayout" class="grid-child-element green">
+        <img
+          style="width: 611px; height: 369px"
+          src="../assets/testAssets/assets/images/lc-hero-desktop@2x.png"
+        />
+      </div>
+    </div>
+  </div>
+</header>
+
+<h2 *ngIf="!isMobileLayout" style="color: #0a49af; text-align: center; padding-top: 80px; padding-bottom: 65px;">
+  One Solution Designed to Make Your Firm More Money
+</h2>
+
+<h2 *ngIf="isMobileLayout" style="color: #0a49af; text-align: center; padding-top: 80px; padding-bottom: 65px;">
+  One Solution Designed to <br> Make Your Firm More <br> Money
+</h2>
+
+<div style="min-height:400px;" class="sectionOneWrapper">
+  <div class="card">
+    <img src="../assets/testAssets/assets/images/lc-safe-docs.jpg" />
+    <div style="padding: 5px ;" class="container">
+      <h4>Safe Documents</h4>
+      <p>
+        LawConnect stores its data on <br />
+        servers provided by Amazon Web <br />
+        Services and is safer than email.
+      </p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="../assets/testAssets/assets/images/lc-work-remote.jpg" />
+    <div class="container">
+      <h4>Work remotely</h4>
+      <p>
+        You can sign in to LawConnect and <br />
+        view, collaborate and share your <br />
+        documents from anywhere..
+      </p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="../assets/testAssets/assets/images/lc-greater-collab.jpg" />
+    <div class="container">
+      <h4>Greater Collaboration</h4>
+      <p>
+        Collaborate on documents with <br />
+        clients, lawyers and other parties with <br />
+        LawConnect’s Comment and Reply.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="sectionTwoWrapper">
+  <div class="grid-container-element">
+    <div *ngIf="isMobileLayout" class="grid-child-element green">
+      <img src="../assets/testAssets/assets/images/lc-share-docs.png" />
+    </div>
+    <div class="grid-child-element purple">
+      <h2>Sharing Documents</h2>
+      <p>
+        Your lawyer will share documents related to your case with
+        you, via LawConnect. Each time a document is shared by your
+        lawyer, you will receive an email notification so you can
+        access the document
+      </p>
+      <br />
+      <p>
+        If you already have a LawConnect account you can login and an
+        alert will be in your
+        notifications tab that a document has been
+        shared.
+      </p>
+    </div>
+    <div *ngIf="!isMobileLayout" class="grid-child-element green">
+      <img src="../assets/testAssets/assets/images/lc-share-docs.png" />
+    </div>
+  </div>
+</div>
+
+<div class="sectionThreeWrapper">
+  <div class="grid-container-element">
+    <div *ngIf="!isMobileLayout" class="grid-child-element green">
+      <img src="../assets/testAssets/assets/images/lc-sign-docs-desktop.png" />
+    </div>
+    <div class="grid-child-element purple">
+      <div *ngIf="isMobileLayout" class="grid-child-element purple">
+        <img style="padding-bottom:6vh;" src="../assets/testAssets/assets/images/lc-sign-docs-mobile.png" />
+      </div>
+      <h2>
+        Signing Documents<br />
+        Electronically
+      </h2>
+      <p>
+        LawConnect integrates with DocuSign to provide our users <br />
+        with a quick, easy and secure way to sign importnt legal <br />
+        documents online.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<footer></footer>

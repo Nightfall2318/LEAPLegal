@@ -1,0 +1,27 @@
+<div class="nav">
+	<div class="content">
+		<h1 class="logo-header"><img src='../../assets/testAssets/assets/logos/LawConnect-logo-reverse-RGB.svg'></h1>
+		<div class="links nav-items">
+			<a style="width: 80px;">For People</a>
+			<a style="width: 110px;">For Businesses</a>
+			<a>Contact</a>
+		</div>
+    <div class="links nav-items">
+      <button class="loginBtn"> Login </button>
+      <button class="createAccountBtn"> Create Free Account </button>
+    </div>
+		<div class="menu" (click)="onMenu()">
+			<input type="checkbox" hidden id="myID" />
+			<label for="myID" [hidden]="isOpen">&#9776;</label>
+			<label for="myID" [hidden]="!isOpen">&#10006;</label>
+		</div>
+		<div class="dropdown" id="dropdown" [class.show]="isOpen">
+      <a>For People</a>
+			<a>For Businesses</a>
+			<a>Contact</a>
+      <a><button class="loginBtn"> Login </button> </a>
+      <a><button class="createAccount"> Create Free Account </button></a>
+		</div>
+	</div>
+</div>
+

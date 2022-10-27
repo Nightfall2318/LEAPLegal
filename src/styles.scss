@@ -1,0 +1,18 @@
+/* Add application styles & imports to this file! */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@import 'variables';
+
+.main {
+  margin-top: var(--application-margin-top);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
